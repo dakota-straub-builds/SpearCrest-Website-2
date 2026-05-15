@@ -1,0 +1,295 @@
+.ob-wrap {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.ob-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(8, 12, 26, 0.9);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ob-nav-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ob-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* Progress */
+.ob-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 0;
+}
+.ob-progress-step {
+  display: flex;
+  align-items: center;
+}
+.ob-progress-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+.ob-progress-step.active .ob-progress-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+.ob-progress-step.done .ob-progress-dot {
+  background: #059669;
+  border-color: #059669;
+  color: #fff;
+}
+.ob-progress-line {
+  width: 48px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 4px;
+}
+
+/* Card */
+.ob-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.ob-welcome {
+  text-align: center;
+}
+.ob-welcome h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 16px 0 12px;
+  letter-spacing: -0.5px;
+}
+.ob-welcome p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.ob-welcome-icon {
+  font-size: 48px;
+}
+.ob-contact-note {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.ob-contact-note a {
+  color: var(--accent-2);
+}
+
+.ob-step-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.ob-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+.ob-card > p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Sections */
+.ob-section {
+  margin-bottom: 24px;
+}
+.ob-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.ob-hint {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+}
+
+/* Fields */
+.ob-fields { margin: 24px 0; }
+.ob-field { margin-bottom: 12px; }
+.ob-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text-h);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.ob-input::placeholder { color: var(--text-muted); }
+.ob-input:focus { border-color: var(--accent-border); background: rgba(255,255,255,0.07); }
+
+/* GBP Toggle */
+.ob-toggle-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.ob-toggle {
+  flex: 1;
+  padding: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.ob-toggle:hover { border-color: var(--accent-border); color: var(--text-h); }
+.ob-toggle.active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent-2);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+/* Copy field */
+.ob-copy-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text-h);
+  font-family: var(--mono);
+}
+.ob-copy-btn {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-2);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: background 0.2s;
+}
+.ob-copy-btn:hover { background: var(--accent); color: #fff; }
+
+/* Actions */
+.ob-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.ob-btn {
+  padding: 13px 28px !important;
+  font-size: 15px !important;
+  border-radius: 10px !important;
+}
+.ob-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Done */
+.ob-done {
+  text-align: center;
+}
+.ob-done-icon { font-size: 56px; margin-bottom: 8px; }
+.ob-done h1 { font-size: 28px; color: var(--text-h); margin-bottom: 16px; }
+.ob-done > p { color: var(--text); line-height: 1.7; margin-bottom: 32px; }
+.ob-done-next {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.ob-done-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--text);
+}
+.ob-done-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .ob-card { padding: 24px 20px; }
+  .ob-toggle-row { flex-direction: column; }
+  .ob-actions { flex-direction: column; }
+}
