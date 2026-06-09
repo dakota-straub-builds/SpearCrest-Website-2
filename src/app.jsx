@@ -86,8 +86,8 @@ function AuditWidget() {
 }
 
 const TICKER_ITEMS = [
-  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','+ 12 States',
-  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','+ 12 States',
+  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','Kentucky','Iowa','Illinois','South Carolina','North Carolina','New Jersey','New Hampshire','Ohio',
+  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','Kentucky','Iowa','Illinois','South Carolina','North Carolina','New Jersey','New Hampshire','Ohio',
 ]
 
 function Ticker() {
