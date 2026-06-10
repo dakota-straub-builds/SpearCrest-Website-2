@@ -85,9 +85,17 @@ function AuditWidget() {
   )
 }
 
-const TICKER_ITEMS = [
-  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','Kentucky','Iowa','Illinois','South Carolina','North Carolina','New Jersey','New Hampshire','Ohio',
-  'Texas','Oklahoma','Arkansas','Colorado','Arizona','Nevada','Florida','Georgia','Tennessee','Missouri','Kentucky','Iowa','Illinois','South Carolina','North Carolina','New Jersey','New Hampshire','Ohio',
+  const TICKER_ITEMS = [
+  'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia',
+  'Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
+  'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey',
+  'New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina',
+  'South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming',
+  'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia',
+  'Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
+  'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey',
+  'New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina',
+  'South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming',
 ]
 
 function Ticker() {
@@ -111,7 +119,7 @@ function Hero() {
         <span className="hero-badge-new">NEW</span>
         Local SEO for home services
       </div>
-      <h1 className="reveal reveal-delay-1">More leads.<br />Less wasted ad spend.</h1>
+      <h1 className="reveal reveal-delay-1">Marketing that actually shows<br />up for your business.</h1>
       <p className="hero-sub reveal reveal-delay-2">
         We engineer search, ads, and tracking that put home service businesses
         on the map and turn local intent into booked jobs.
